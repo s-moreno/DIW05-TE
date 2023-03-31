@@ -1,0 +1,192 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* CLASES DE AYUDA- BORRAR ANTES DE ENTREGAR */
+.contorno {
+    border: 1px solid black;
+}
+/**********************************************/
+
+/************************************
+    Colores base y estilos generales
+**************************************/
+$principal:#009ab7;
+$secundario:rgba(0,154,183,.2);
+$blanco:#fff;
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.avatarmin {
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    color: $principal;
+}
+
+footer p {
+    font-size: .8em;
+}
+
+.cabecera {
+    background-color: $blanco;
+    z-index: 100;
+}
+
+.cuerpo {
+    margin-top: 90px;
+}
+
+.banner {
+    max-height: 100px;
+}
+
+.grande {
+    font-size: 2em;
+}
+
+.mediano {
+    font-size: 1.5em;
+}
+
+/**************************
+    Inputs del formulario
+***************************/
+input[type="text"] {
+    background-color: $secundario;
+    border-radius: 500px;
+    color: $principal;
+
+    &:focus {
+        background-color: $secundario;
+        color: $principal;
+    }
+
+    &::placeholder {
+        font-size: 1.2rem;
+        color: $principal;
+    }
+}
+
+.estado::placeholder {
+    font-size: 1rem !important;
+    font-weight: bold;
+}
+
+/********************************
+    Enlaces del menú, botones y generales
+*********************************/
+a {
+    color: $principal;
+    text-decoration: none;
+
+    &:visited {
+        color: $principal;
+    }
+}
+
+.menu {
+    color: $principal;
+    padding: .4em 1.6em;
+    border-radius: 10px;
+
+    &:visited {
+        color: $principal;
+    }
+
+    &:hover {
+        background-color: $principal;
+    }
+}
+
+.menu2 {
+    color: $principal;
+    padding: .3em 0.7em;
+    margin: .2em;
+
+    &:visited {
+        color: $principal;
+    }
+
+    &:hover {
+        background-color: $principal;
+        color: $blanco;
+    }
+}
+
+.activo {
+    border-bottom: 4px solid $principal;
+    border-radius: 0px;
+
+    &:hover {
+        background-color: $blanco;
+    }
+
+}
+
+.menu:hover, .menu2:hover > i {
+    color: $blanco;
+}
+
+.activo:hover > i {
+    color: $principal;
+}
+
+.zoom:hover {
+    transform: scale(0.98);
+}
+
+.subrayado:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.boton {
+    background-color: $secundario;
+    color: $principal;
+    padding: 10px;
+
+    &:hover {
+        background-color: $principal;
+        color: $blanco;
+    }
+    &:visited {
+        @extend .boton;
+    }
+}
+
+/**********
+    MAIN
+***********/
+.borde {
+    border: 3px solid $secundario;
+}
+
+/*
+    MEDIA QUERIES
+*/
+
+@media (max-width:1199px) {
+    .cuerpo {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width:767px) {
+    .grande {
+        font-size: 1.5em;
+    }
+    .menu {
+        padding: .4em 1.2em;
+    }
+    .cuerpo {
+        margin-top: 200px;
+    }
+}

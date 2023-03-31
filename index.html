@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birt Social</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body class="container-fluid">
+    <!-- MENU -->
+    <nav class="row mb-2 d-flex justify-content-around fixed-top cabecera">
+      <!-- LOGO Y BUSCADOR -->
+      <div class="col-auto col-md-6 col-xl-4 order-first row">
+        <div class="col-auto ">
+          <a href="http://"><img class="img-fluid " src="./images/Logo_Birt.PNG" alt="logo birt"></a>
+        </div>
+        <div class=" col d-inlne-flex row align-items-center justify-content-start">
+          <div class="col-1">
+            <label class="col-form-label-lg "><i class=" bi bi-search"></i></label>
+          </div>
+          <div class="col ">
+            <input type="text" class="form-control " placeholder="Buscar">
+          </div>
+        </div>
+      </div>
+      <!-- MENÚ PRINCIPAL -->
+      <div class="col-12 col-md-12 col-xl-4 order-last d-flex justify-content-center align-items-center">
+        <ul class="nav flex-nowrap">
+          <li><a class="nav-link menu activo" ><i class="bi bi-house-door-fill grande"></i></a></li>
+          <li><a class="nav-link menu" href=""><i class="bi bi-flag grande"></i></a></li>
+          <li><a class="nav-link menu" href=""><i class="bi bi-collection-play grande"></i></a></li>
+          <li><a class="nav-link menu" href=""><i class="bi bi-people grande"></i></a></li>
+          <li><a class="nav-link menu" href=""><i class="bi bi-bag grande"></i></a></li>
+        </ul>
+
+      </div>
+      <!-- MENÚ SECUNDARIO -->
+      <div class="col-auto col-md-6 col-xl-4 order-xl-last">
+        <ul class="nav d-flex align-items-center justify-content-end flex-nowrap">
+          <li><a class="nav-link menu2 rounded-5 d-inline-flex align-items-center" href=""><img class="img-fluid avatar rounded-circle me-1" src="./images/persona1.jpg" alt="Gorka">Gorka</a></li>
+          <li><a class="nav-link menu2 rounded-circle" href=""><i class="bi bi-grid grande"></i></a></li>
+          <li><a class="nav-link menu2 rounded-circle" href=""><i class="bi bi-chat grande"></i></a></li>
+          <li><a class="nav-link menu2 rounded-circle" href=""><i class="bi bi-bell grande"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- FIN NAV -->
+    <!-- CUERPO-->
+    <div class="row cuerpo">
+      <!-- LATERAL IZQUIERDO -->
+      <aside class="d-none d-md-block col-md-3 col-lg-3 col-xl-4">
+        <nav class="nav flex-column d-inline-block ">
+          <a class="nav-link menu2 rounded-4  d-inline-flex align-items-center" href=""><img class="img-fluid avatar rounded-circle me-3" src="./images/persona1.jpg" alt="Gorka Zengoitia"><strong>Gorka Zengoitia</strong></a>
+          <a class="nav-link menu2 rounded-5" href=""><i class="bi bi-people me-3 align-middle mediano"></i><span class="align-middle">Amigos</span></a>
+          <a class="nav-link menu2 rounded-5" href=""><i class="bi bi-flag me-3 align-middle mediano"></i><span class="align-middle">Páginas</span></a>
+          <a class="nav-link menu2 rounded-5" href=""><i class="bi bi-collection me-3 align-middle mediano"></i><span class="align-middle">Grupos</span></a>
+          <a class="nav-link menu2 rounded-5" href=""><i class="bi bi-bag me-3 align-middle mediano"></i><span class="align-middle">Marketplace</span></a>
+          <a class="nav-link menu2 rounded-5" href=""><i class="bi bi-tv me-3 align-middle mediano"></i><span class="align-middle">Watch</span></a>
+          <a class="nav-link menu2 rounded-5" href=""><i class="bi bi-calendar-event me-3 align-middle mediano"></i><span class="align-middle">Eventos</span></a>
+        </nav>
+        <footer class="mt-3">
+          <p class="ms-2"><a class="me-2" href="">Privacidad</a> <a class="me-2" href="">Condiciones</a> <a class="me-2" href="">Publicidad</a> <a class="me-2" href="">Opciones de anuncio</a> <a class="me-2" href="">Cookies</a> <a href="">Más</a></p>
+        </footer>
+      </aside>
+      <!-- CUERPO PRINCIPAL -->
+      <main class="col-md-6 col-lg-5 col-xl-4">
+        <section class="borde rounded-2 mb-4">
+          <div class="d-flex p-3">
+            <img class="img-fluid avatar rounded-circle me-4" src="./images/persona1.jpg" alt="Gorka">
+            <input type="text" class="form-control estado my-2" placeholder="¿Qué estás pensando Gorka?">
+          </div>
+          <hr class="mx-3 my-0">
+          <div class="p-3">
+            <div class="row justify-content-between p-0 my-2 text-center flex-nowrap overflow-x-hidden">
+              <a class="menu col rounded-2 d-flex justify-content-center align-items-center" href=""><i class="bi bi-camera-video pe-2 mediano"></i><span class="d-none d-lg-block">Vídeo</span></a>
+              <a class="menu col rounded-2 d-flex justify-content-center align-items-center" href=""><i class="bi bi-images pe-2 mediano"></i><span class="d-none d-lg-block">Foto</span></a>
+              <a class="menu col rounded-2 d-flex justify-content-center align-items-center" href=""><i class="bi bi-emoji-smile pe-2 mediano"></i><span class="d-none d-lg-block">Sentimiento</span></a>
+          </div>
+        </section>
+        <section>
+          <article class="borde rounded-2 mb-4">
+            <div class="d-flex p-3">
+              <a href=""><img class="img-fluid avatar rounded-circle me-2" src="./images/persona3.jpg" alt="Jaione"></a>
+              <div class="flex-column">
+                <p class="p-0 m-0"><a class="subrayado" href=""><strong>Jaione Perez</strong></a></p>
+                <p class="p-0 m-0"><a class="subrayado" href="">1 hora</a></p>
+              </div>
+            </div>
+            <p class="m-0 px-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quas numquam itaque delectus facere odit unde eos non, magni ipsa illum optio saepe eaque ab natus explicabo fugit culpa voluptatum. </p>
+            <img class="img-fluid px-3 mt-2 mb-1" src="./images/paisaje1.jpg" alt="oficina">
+            <div class="px-3 py-2 m-0 d-flex justify-content-between">
+              <div><a class="menu2 rounded-5" href=""><i class="bi bi-hand-thumbs-up-fill pe-2"></i><span>60</span></a></div>
+              <div><a class="menu2 rounded-5" href="">7 comentarios</a></div>
+            </div>
+            <div class="row justify-content-between px-3 my-2 text-center">
+              <a class="boton col rounded-1 mx-3" href=""><i class="bi bi-hand-thumbs-up me-3"></i>Me gusta</a>
+              <a class="boton col rounded-1 mx-3" href=""><i class="bi bi-chat me-3"></i>Comentar</a>
+            </div>
+          </article>
+          <article class="borde rounded-2 mb-4">
+            <div class="d-flex p-3">
+              <a href=""><img class="img-fluid avatar rounded-circle me-2" src="./images/persona2.jpg" alt="Iker"></a>
+              <div class="flex-column">
+                <p class="p-0 m-0"><a class="subrayado" href=""><strong>Iker Arana</strong></a></p>
+                <p class="p-0 m-0"><a class="subrayado" href="">1 hora</a></p>
+              </div>
+            </div>
+            <p class="m-0 px-3">Vivamus malesuada tortor eget enim vehicula, nec luctus arcu consequat. Ut pharetra ultricies nulla, vitae iaculis libero. Donec iaculis sem quis augue aliquam consequat. Nam mauris magna, congue non tincidunt at, rutrum eget nisl.</p>
+            <img class="img-fluid px-3 mt-2 mb-1" src="./images/paisaje1.jpg" alt="oficina">
+            <div class="px-3 py-2 m-0 d-flex justify-content-between">
+              <div><a class="menu2 rounded-5" href=""><i class="bi bi-hand-thumbs-up-fill pe-2"></i><span>75</span></a></div>
+              <div><a class="menu2 rounded-5" href="">3 comentarios</a></div>
+            </div>
+            <div class="row justify-content-between px-3 my-2 text-center">
+              <a class="boton col rounded-1 mx-3" href=""><i class="bi bi-hand-thumbs-up me-3"></i>Me gusta</a>
+              <a class="boton col rounded-1 mx-3" href=""><i class="bi bi-chat me-3"></i>Comentar</a>
+            </div>
+          </article>
+        </section>
+      </main>
+      <!-- LATERAL DERECHO -->
+      <aside class="d-none d-md-block col-md-3 col-lg-4 col-xl-4 ps-xl-5">
+        <p class="mb-1"><strong>Publicidad</strong></p>
+        <div class="mb-2 banner overflow-hidden">
+          <a href=""><img class="img-fluid zoom" src="./images/ad1.jpg" alt="publicidad1"></a>
+        </div>
+        <div class="mb-2 banner overflow-hidden">
+          <a href=""><img class="img-fluid zoom" src="./images/ad2Eus.jpg" alt="publicidad2"></a>
+        </div>
+        <p class="mb-1"><strong>Contactos</strong></p>
+        <nav class="nav flex-column">
+          <a class="nav-link menu2 rounded-2 d-inline-flex align-items-center" href="#"><img class="img-fluid avatarmin rounded-circle me-3" src="./images/persona2.jpg" alt="Iker Arana">Iker Arana</a>
+          <a class="nav-link menu2 rounded-2 d-inline-flex align-items-center" href="#"><img class="img-fluid avatarmin rounded-circle me-3" src="./images/persona3.jpg" alt="Jaione Perez">Jaione Perez</a>
+          <a class="nav-link menu2 rounded-2 d-inline-flex align-items-center" href="#"><img class="img-fluid avatarmin rounded-circle me-3" src="./images/persona4.jpg" alt="Iñigo Zarate">Iñigo Zarate</a>
+          <a class="nav-link menu2 rounded-2 d-inline-flex align-items-center" href="#"><img class="img-fluid avatarmin rounded-circle me-3" src="./images/persona5.jpg" alt="Itziar Gortazar">Itziar Gortazar</a>
+        </nav>
+      </aside>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
